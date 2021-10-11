@@ -31,7 +31,7 @@ public class PL1_LoginProtego {
 
     @When("PL1 - producer opens protego login page")
     public void pl1_producer_opens_protego_login_page() throws InterruptedException {
-        driver.navigate().to("https://capisso.staging.sentryc.com/login");
+        driver.navigate().to("https://app.staging.sentryc.com/login");
         Thread.sleep(3000);
     }
 
@@ -51,12 +51,13 @@ public class PL1_LoginProtego {
     }
 
     @And("PL1 - producer clicks on login button")
-    public void clch1_clicks_on_capisso_login_button_capisso() {
+    public void pl1_producer_clicks_on_login_button() throws InterruptedException {
         loginProtego.clickOnLoginProtego();
+        Thread.sleep(3000);
     }
 
     @Then("PL1 - producer is navigated to protego homepage")
-    public void clch1_user_is_navigated_to_capisso_homepage_capisso() throws InterruptedException {
+    public void pl1_producer_navigated_to_protego_homepage() throws InterruptedException {
         driver.navigate().to("https://app.staging.sentryc.com/inbox");
         Assert.assertTrue(driver.findElement(By.xpath("//*[contains(text(), 'Results')]")).isDisplayed());
         Thread.sleep(2000);

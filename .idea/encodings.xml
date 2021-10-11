@@ -6,6 +6,7 @@
     <file url="file://$PROJECT_DIR$/src/test/Features/PL1_LoginProtego.feature" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/test/java/pagefactory/LoginCapisso_PF.java" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/test/java/pagefactory/LoginProtego_PF.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/test/java/runners/TestRunner.java" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/test/java/stepdefinitions/CL1_LoginCapisso.java" charset="windows-1252" />
   </component>
 </project>

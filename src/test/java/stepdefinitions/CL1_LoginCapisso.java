@@ -53,8 +53,9 @@ public class CL1_LoginCapisso {
     }
 
     @And("CL1 - clicks on capisso login button capisso")
-    public void clch1_clicks_on_capisso_login_button_capisso() {
+    public void clch1_clicks_on_capisso_login_button_capisso() throws InterruptedException {
         loginCapisso.clickOnLoginCapisso();
+        Thread.sleep(3000);
     }
 
     @Then("CL1 - user is navigated to capisso homepage capisso")
